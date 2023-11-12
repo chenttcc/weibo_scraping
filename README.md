@@ -28,4 +28,4 @@ Using Selenium and Scrapy to collect comprehensive data from Weibo (user, weibo,
 
 ### weibo_repost.py
 * collect repost content under the specific weibo
-
+* 
