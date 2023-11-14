@@ -12,6 +12,21 @@ import datetime
 
 
 db_password = '111'
+
+''' 
+        The statement used for creating local statement:
+        CREATE TABLE `xiaozhanweibo` (
+              `id` int NOT NULL AUTO_INCREMENT,
+              `ttime` datetime DEFAULT NULL,
+              `user_link` varchar(255) DEFAULT NULL,
+              `user_name` varchar(255) DEFAULT NULL,
+              `content` text,
+              PRIMARY KEY (`id`)
+            ) 
+
+'''
+
+
 def parse_time(collect_time,str):
     if len(re.findall('秒',str)) > 0 :
         inttime=int(re.findall('(\d+)秒',str)[0])
